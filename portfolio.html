@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Hamburgermenu.css">
+    <style>
+
+:root {
+    --background-color:rgb(255, 255, 255);
+    --color-green:rgb(71, 143, 103);
+    --font-size-1: 3rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+
+margin:0px;
+font-family: roboto;
+background-color: var(--background-color);
+background-image: url("background.jpg");
+}
+
+nav{
+
+font-size: 2rem; 
+display: flex;
+justify-content: end;
+}
+
+
+
+        .containerMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    
+    margin-bottom: 8em;
+}
+img{
+    height:auto;
+    width: 90vw;
+}
+
+.TETTSTST{
+    height:50em;
+    width: 50em;
+    
+}
+
+footer{
+    background-color: var(--color-green);
+    border-radius: 15px 15px 0px 0px;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+    
+}
+
+
+
+
+
+
+
+/* Area for nav & header*/
+
+
+
+
+/* Area for main area */
+
+
+
+
+
+
+.mainCards{
+    display: box;
+text-align: center;
+padding:0px;
+}
+
+h2{
+    margin: 0.2em ;
+}
+
+
+h1{
+    padding-top: 50%;
+    color: var(--color-green);
+    text-align: center;
+    font-size: var(--font-size-1);
+}
+
+.h1Child{
+    padding-top: 1em;
+    color: var(--color-green);
+    text-align: center;
+    font-size: var(--font-size-1);
+    padding-bottom: 1.5em;
+}
+
+
+
+/*Footer area*/
+
+.footerIcons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0em 0.8em;
+}
+
+
+.footerImg{
+    display: box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 5.5em;
+    width: 5.5em;
+    padding:0.2em
+    
+}
+.menu-wrap menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+    
+@media (min-width: 600px){
+    footer{
+        display: flex;
+        height: auto;
+        position: static;
+}
+.footerIcons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!--Header-->
+
+<nav class="stickyTop">
+<div class="menu-btn">
+    <div class="menu-btn__burger"></div>
+</div>
+<div class="menu-wrap"><ol></ol><li><a href="">Om</a></li>
+    <li><a href="">Portfolio</a></li>
+    <li><a href="">Kontakt</a></li></div>
+
+
+
+</nav>
+
+<!--main-->
+<h1 class="h1Child">Portfolio</h1>
+<section class="containerMain">
+<a class="mainCards" href=""><img src="Assets/Projects/Website1.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website2.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website3.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website4.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website5.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website6.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website7.png" alt="">
+
+<a class="mainCards" href=""><img src="Assets/Projects/Website8.png" alt="">
+
+</section>
+</main>
+
+<!--footer-->
+<footer>
+
+    <section>
+        <div><a href=""><img class="TETTSTST" src="Assets/Projects/Website8.png" alt=""></div>
+        <div class="footerIcons">
+<img class="footerImg" src="assets/icons8-home.svg" alt="">
+<img class="footerImg" src="assets/profile-circle.svg" alt="">
+<img class="footerImg" src="assets/call-calling.svg" alt="">
+<img class="footerImg" src="assets/emoji-happy.svg" alt=""></div>
+
+</section>
+</footer>
+<script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+:root{
+    --font-size-1: 1rem;
+    --font-size-2: 2rem;
+    --font-size-3: 3rem;
+    --font-size-4: 4rem;
+
+    --text-blackcolor: black;
+    --text-blackcolor: white;
+
+    --font-family: sans-serif;
+}
